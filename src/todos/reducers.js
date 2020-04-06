@@ -1,4 +1,25 @@
-import { CREATE_TODO, REMOVE_TODO, MARK_TODO_AS_COMPLETED } from './actions';
+import {
+  CREATE_TODO,
+  REMOVE_TODO,
+  MARK_TODO_AS_COMPLETED,
+  LOAD_TODOS_IN_PROGESS,
+  LOAD_TODOS_SUCCESS,
+  LOAD_TODOS_FAILURE
+} from './actions';
+
+export const isLoading = (state =false, action) => {
+  const { type } = action;
+
+  switch (type) {
+    case LOAD_TODOS_IN_PROGESS:
+      return true
+    case LOAD_TODOS_SUCCESS:
+    case LOAD_TODOS_FAILURE:
+      return false;
+    default:
+      return state;
+  }
+};
 
 // Actions reducers
 export const todos = (state = [], action) => {
