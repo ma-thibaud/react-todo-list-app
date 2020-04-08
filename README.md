@@ -8,7 +8,7 @@ Web app created using React & Redux.
 - [npm](https://www.npmjs.com/)
 
 2. Clone or download this repository to your local machine
-3. Clone or download the server from [this other repository](https://www.google.com).
+3. Clone or download the server from [this other repository](https://github.com/ma-thibaud/react-todo-list-server).
 4. In the server folder, run `npm install` to install the dependencies & run `npm run start` to start the server
 5. In this repository's folder, and in **another terminal**, run `npm install` to install the dependencies & run `npm run dev` to launch the app
 
