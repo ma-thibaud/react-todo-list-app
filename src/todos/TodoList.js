@@ -18,7 +18,12 @@ const ListWrapper = styled.div`
 `;
 
 // Component
-const TodoList = ({ completedTodos, incompleteTodos, onRemovePressed, onMarkAsCompletedPressed, isLoading, startLoadingTodos }) => {
+const TodoList = ({ completedTodos,
+                    incompleteTodos,
+                    onRemovePressed,
+                    onMarkAsCompletedPressed,
+                    isLoading,
+                    startLoadingTodos }) => {
   useEffect(() => {
     startLoadingTodos();
   }, []);
@@ -29,11 +34,13 @@ const TodoList = ({ completedTodos, incompleteTodos, onRemovePressed, onMarkAsCo
       <NewTodoForm />
       <h3>Incomplete:</h3>
       {incompleteTodos.map(todo => <TodoListItem
+        key={todo.id}
         todo={todo}
         onRemovePressed={onRemovePressed}
         onMarkAsCompletedPressed={onMarkAsCompletedPressed}/>)}
         <h3>Completed:</h3>
         {completedTodos.map(todo => <TodoListItem
+          key={todo.id}
           todo={todo}
           onRemovePressed={onRemovePressed}
           onMarkAsCompletedPressed={onMarkAsCompletedPressed}/>)}
