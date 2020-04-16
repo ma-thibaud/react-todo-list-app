@@ -1,21 +1,26 @@
 # React To-Do List App
 
-Web app created using React & Redux.
+Simple Todo App created using React/Redux and Express.
 
-## Quickstart
-1. Make sure you have these installed:
-- [node](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
+## Table of contents
+* [Features](#features)
+* [Technologies](#technologies)
+* [Getting started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Testing](#testing)
 
-2. Clone or download this repository to your local machine
-3. Clone or download the server from [this other repository](https://github.com/ma-thibaud/react-todo-list-server)
-4. In the server folder, run `npm install` to install the dependencies & run `npm run start` to start the server
-5. In this repository's folder, and in **another terminal**, run `npm install` to install the dependencies & run `npm run dev` to launch the app
-6. Open your browser and go to http://localhost:3000/
+## Features
 
-## Tech/Framework used
+- Shows a list of todos
+- Highlights incomplete todos that are due more than 5 days ago
+- User can add a todo to the list
+- User can delete a todo from the list
+- User can mark a todo as completed
 
-**Built with:**
+## Technologies
+
+**App built with:**
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
 - [Redux Thunk](https://www.npmjs.com/package/redux-thunk)
@@ -23,9 +28,44 @@ Web app created using React & Redux.
 - [Styled-Components](https://styled-components.com/)
 - [Babel](https://babeljs.io/) / [Webpack](https://webpack.js.org/)
 
-## Tests
+**Server built with:**
+- [Express](https://expressjs.com/)
 
-**Testing with:**
+## Getting started
+
+### Prerequisites
+
+Make sure you have installed all of the following prerequisites on your development machine:
+
+-   [Node.js](https://nodejs.org/)
+-   [npm](https://www.npmjs.com/get-npm)
+
+### Installation
+
+1. Download or clone the repo
+
+```sh
+git clone https://github.com/ma-thibaud/react-todo-list-app.git
+cd react-todo-list-app
+```
+
+2. Install the dependencies
+
+```sh
+npm install
+```
+
+3. Run the app and the server
+
+```sh
+npm run dev
+```
+
+The app should now be running on [localhost:3000](http://localhost:3000/) and the server on [localhost:8080](http://localhost:8080/todos).
+
+## Testing
+
+**App tested with:**
 - [Mocha](https://mochajs.org/)
 - [Chai](https://www.chaijs.com/)
 - [Sinon](https://sinonjs.org/)
